@@ -1,4 +1,4 @@
-# Lembar Kerja 2
+# Lembar Kerja 3
 
 ## Deskripsi Soal
 Pada kasus kali ini, pabrik selai berencana membuat produk baru, yaitu selai pisang. Oleh karena itu, kalian perlu memodifikasi sistem yang telah kalian buat sebelumnya untuk dapat memproses kontainer yang berisi buah pisang. Kualitas buah pisang, selain dilihat dari warna dan beratnya, akan dilihat juga dari adanya bercak (*speck*) di permukaan kulitnya. Oleh karena itu, aturan penentuan kualitasnya pun berbeda dengan stroberi (Tabel 1 dan Tabel 2).
