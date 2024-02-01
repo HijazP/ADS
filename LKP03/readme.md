@@ -1,11 +1,11 @@
 # Lembar Kerja 2
 
 ## Deskripsi Soal
-Sebuah pabrik selai membuat selai stroberi. Setiap harinya, mereka akan menerima satu kontainer buah stroberi dari perkebunan stroberi rekanan mereka. Akan tetapi, kualitas (*grade*) stroberi yang ada pada kontainer tersebut bermacam-macam.
+Pada kasus kali ini, pabrik selai berencana membuat produk baru, yaitu selai pisang. Oleh karena itu, kalian perlu memodifikasi sistem yang telah kalian buat sebelumnya untuk dapat memproses kontainer yang berisi buah pisang. Kualitas buah pisang, selain dilihat dari warna dan beratnya, akan dilihat juga dari adanya bercak (*speck*) di permukaan kulitnya. Oleh karena itu, aturan penentuan kualitasnya pun berbeda dengan stroberi (Tabel 1 dan Tabel 2).
 
-![](./img/02_1.png)
+![](./img/03_1.png)
 
-Kualitas daripada stroberi dilihat dari berat (*weight*) dan warnanya (*color*) dengan standar sebagai berikut:
+Tabel 1.  Penentuan kualitas stroberi
 
 | Grade | Weight | Color |
 | :---: | :---: | :---: |
@@ -14,12 +14,24 @@ Kualitas daripada stroberi dilihat dari berat (*weight*) dan warnanya (*color*) 
 | Low | 7 gram > weight >= 12 gram | Dark Red
 | Reject | Others |
 
-Pabrik hanya akan menerima kontainer stroberi apabila jumlah kualitas *reject* paling banyak 30% dari jumlah seluruh stroberi di kontainer tersebut. Oleh karena itu, mereka membuat suatu mesin yang disebut sebagai *grader*. Grader akan menganalisis isi dari kontainer dan menentukan kualitas stroberi, sekaligus mencatat jumlah stroberi per kualitas dalam sebuah laporan. Berdasarkan hasil tersebut, *grader* akan memutuskan apakah pabrik dapat menerima atau menolak kontainer tersebut. Apabila kontainer diterima, kontainer tersebut akan diteruskan ke proses selanjutnya. Kontainer yang ditolak akan dikembalikan ke perkebunan stroberi.
+Tabel 2.  Penentuan kualitas pisang
 
-Tugas kalian adalah mensimulasikan kegiatan di atas dalam suatu proyek sederhana yang dibuat dengan paradigma berorientasi objek.
+| Grade | Weight | Color | Speck |
+| :---: | :---: | :---: | :---: |
+| High | 130 < weight <= 150 | Yellow | LOW |
+| Medium | 130 < weight <= 150 | Yellow | MEDIUM |
+| Medium | 100 < weight <= 130 | Yellow | LOW |
+| Low | 130 < weight <= 150 | Yellow | HIGH |
+| Low | 100 < weight <= 130 | Yellow | MEDIUM |
+| Low | weight <= 100 | Yellow | LOW |
+| Low | 150 < weight | Yellow | LOW or MEDIUM |
+| Reject | Others |
+
+Pabrik hanya akan menerima kontainer stroberi apabila jumlah kualitas *reject* paling banyak 30% dari jumlah seluruh stroberi di kontainer tersebut, sedangkan pisang 40%. Asumsi selainnya masih sama dengan Lembar Kerja 1.
 
 ### Contoh Masukan
 ```
+Data Stroberi:
 18 DARK_RED
 1 DARK_RED
 10 MEDIUM_RED
@@ -37,6 +49,18 @@ Tugas kalian adalah mensimulasikan kegiatan di atas dalam suatu proyek sederhana
 12 DARK_RED
 12 DARK_RED
 9 DARK_RED
+
+Data Pisang:
+151 YELLOW LOW
+150 YELLOW LOW
+130 YELLOW LOW
+129 YELLOW LOW
+151 GREEN MEDIUM
+121 GREEN LOW
+100 YELLOW HIGH
+90 YELLOW LOW
+132 YELLOW HIGH
+125 GREEN MEDIUM
 ```
 
 ### Contoh Keluaran
@@ -46,13 +70,27 @@ Container Content: 17 Strawberry
 Grading Time: Thu Feb 01 06:17:22 WIB 2024
 
 Grading Details
-High Grade   : 1 Strawberry
-Medium Grade : 3 Strawberry
-Low Grade    : 5 Strawberry
-Reject       : 8 Strawberry
+High Grade : 1 Strawberry
+Medium Grade: 3 Strawberry
+Low Grade : 5 Strawberry
+Reject : 8 Strawberry
 
 Rejection Ratio: 0.47058823529411764
-Conclusion REJECT
+Conclusion: REJECT
+
+
+***GRADING REPORT***
+Container Content: 10 Banana
+Grading Time: Thu Feb 01 06:17:22 WIB 2024
+
+Grading Details
+High Grade : 1 Banana
+Medium Grade: 2 Banana
+Low Grade : 3 Banana
+Reject : 4 Banana
+
+Rejection Ratio: 0.4
+Conclusion: ACCEPT
 ```
 
 ---
@@ -159,7 +197,7 @@ Akan dirilis pada hari senin.
 ---
 <br>
 <div align="center">
-    <img src="https://project-imas.wiki/images/9/92/Yui_SS_SSR6.png" alt="ADS" width="400" />
+    <img src="https://project-imas.wiki/images/c/c9/Hayate_SS_SSR4.png" alt="ADS" width="400" />
   <br />
   <p>
     Dibuat dengan 🫶 oleh asisten praktikum ADS
