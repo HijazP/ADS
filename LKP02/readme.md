@@ -154,7 +154,37 @@ Berdasarkan kode program yang telah kalian buat, identifikasilah konsep *Object 
 <br>
 
 # Petunjuk/*Clue*
-Akan dirilis pada hari senin.
+<ol>
+  <li>
+    Jika bingung membuat solusi dari masalah dalam bentuk kode, buat <i>flow chart</i> atau <i>pseudocode</i> terlebih dahulu, atau buat terlebih dahulu dengan gaya <i>functional programming</i>
+  </li>
+  <li>
+    Buatlah masing-masing satu fail yang merepresentasikan satu objek atau kelas, sehingga fail yang dibutuhkan adalah
+    <ul>
+      <li>Strawberry.java sebagai representasi objek stroberi</li>
+      <li>Container.java sebagai representasi kontainer yang mewadahi stroberi</li>
+      <li>Grader.java sebagai representasi alat untuk menentukan <i>grade</i> dari stroberi yang dibawa oleh kontainer</li>
+      <li>Main.java/Driver.java, program untuk mengatur apakah stroberi ditambahkan atau berhenti ditambahkan ke kontainer</li>
+    </ul>
+  </li>
+  <li>
+    Gunakan Main.java/Driver.java hanya untuk menjalankan program, jadi tidak ada objek atau kelas lain di dalamnya. Gunakan objek dengan fungsi File() untuk membaca masukan dalam bentuk teks, objek atau modul tersebut bisa digunakan dari <code>java.io.File</code>. Jangan lupa menambahkan pengecualian jika fail yang dibaca tidak ada (<code>FileNotFoundException</code>).
+    <br>
+    Jika tidak ingin menggunakan fail dan memberi masukan secara manual, maka dipersilahkan
+  </li>
+  <li>
+    Buat kelas dengan objek stroberi yang menampung nilai-nilai yang dibutuhkan untuk proses <i>grading</i>. Isi dalam kelas stroberi tersebut juga ada metode yang hanya bisa dilakukan jika terkait dengan stroberi (contoh: mendapatkan nilai ukuran stroberi)
+  </li>
+  <li>
+    Kelas <i>grader</i> adalah kelas atau objek paling penting di sini. Dia menentukan bagaimana stroberi dapat diterima ataupun ditolak. Maka, isi dari kelas atau objek ini adalah perhitungan-perhitungan
+  </li>
+  <li>
+    Kelas kontainer sebenarnya opsional, tetapi akan bagus jika ditambahkan karena sesuai dengan ilustrasi yang merepresentasikan objek di dunia nyatanya. Bayangkan saja, kontainer ini sebagai "wadah" ketika stroberi ditambahkan, kemudian sebagai "objek" yang melewati alat <i>grader</i>. Singkatnya, kontainer diperlukan agar <i>grader</i> tidak menilai stroberi satu-persatu, tapi secara paketan kontainer
+  </li>
+</ol>
+
+Catatan: petunjuk/*clue* ini tidak wajib diikuti, tapi bisa dipakai sebagai patokan. Seminimal mungkin dapat mengikuti petunjuk/*clue*, tapi jika menemukan solusi yang lebih baik, maka bisa menggunakan solusi yang lebih baik tersebut (contoh: menggunakan *enumeration*).
+
 
 ---
 <br>
