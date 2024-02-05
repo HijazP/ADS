@@ -161,10 +161,10 @@ Berdasarkan kode program yang telah kalian buat, identifikasilah konsep *Object 
   <li>
     Buatlah masing-masing satu fail yang merepresentasikan satu objek atau kelas, sehingga fail yang dibutuhkan adalah
     <ul>
-      <li>Strawberry.java sebagai representasi objek stroberi</li>
-      <li>Container.java sebagai representasi kontainer yang mewadahi stroberi</li>
-      <li>Grader.java sebagai representasi alat untuk menentukan <i>grade</i> dari stroberi yang dibawa oleh kontainer</li>
-      <li>Main.java/Driver.java, program untuk mengatur apakah stroberi ditambahkan atau berhenti ditambahkan ke kontainer</li>
+      <li><a href="/LKP02/clue/Strawberry.java"> Strawberry.java</a> sebagai representasi objek stroberi</li>
+      <li><a href="/LKP02/clue/Container.java">Container.java</a> sebagai representasi kontainer yang mewadahi stroberi</li>
+      <li><a href="/LKP02/clue/Grader.java">Grader.java</a> sebagai representasi alat untuk menentukan <i>grade</i> dari stroberi yang dibawa oleh kontainer</li>
+      <li><a href="/LKP02/clue/Main.java">Main.java/Driver.java</a>, program untuk mengatur apakah stroberi ditambahkan atau berhenti ditambahkan ke kontainer</li>
     </ul>
   </li>
   <li>
