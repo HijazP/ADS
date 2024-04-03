@@ -43,7 +43,7 @@ Untuk memeriksa versi Java, buka terminal lalu ketikkan `java --version`. Jika s
 ---
 <br>
 <div align="center">
-    <img src="./img/kyoko.png" alt="Tech Interview Handbook" width="400" />
+    <img src="https://project-imas.wiki/images/8/81/Kyoko_SS_SSR6%2B.png" alt="Waif" width="400" />
   <br />
   <p>
     Dibuat dengan 🫶 oleh asisten praktikum ADS
