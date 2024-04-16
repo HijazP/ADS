@@ -1,8 +1,4 @@
 # Projek Akhir ADS
-bagian A - Bagian B no 4 : LKP 8
-b 5 - c : LKP 9
-d : LKP 10
-
 <div id="tabel-konten">
     Tabel konten
     <ul>
